@@ -28,10 +28,10 @@ public class Thread extends java.lang.Thread {
 
     public void run(){
         try {
-            Thread.sleep(n*1000);
+            Thread.sleep((n+1)*1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("Hello " + n);
+        System.out.println("Hello " + (n+1));
     }
 }
